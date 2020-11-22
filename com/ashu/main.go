@@ -1,7 +1,7 @@
 package main
 
 import (
-	"EthMate10/com/ashu/localrequest"
+	"./localrequest"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -16,7 +16,7 @@ func main() {
 
 func webRoot(context *gin.Context) {
 	var ipAddr = context.ClientIP()
-	context.String(http.StatusOK, ipAddr)
+	context.String(http.StatusOK, "Hello "+ipAddr)
 }
 
 func getTxDetail(context *gin.Context) {
