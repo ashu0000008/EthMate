@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./localrequest"
+	"ashu.com/com/ashu/localrequest"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

@@ -1,0 +1,7 @@
+SET CGO_ENABLED=0
+SET GOOS=linux
+SET GOARCH=amd64
+go build ./com/ashu/main.go
+move main ethMate_win
+scp ./ethMate_win ubuntu@119.45.254.226:/home/ubuntu/ethMate/ethMate_win
+
